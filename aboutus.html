@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Eubix</title>
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #004C97;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 5px;
+    }
+
+    /* Section styling */
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #004C97;
+      font-weight: bold;
+    }
+
+    section p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      line-height: 1.8;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Team and Instructor cards */
+    .team-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .team-member, .instructor {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover, .instructor:hover {
+      transform: translateY(-10px);
+    }
+
+    .team-member h3, .instructor h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #004C97;
+    }
+
+    .team-member p, .instructor p {
+      font-size: 1.1em;
+      color: #666;
+    }
+
+    /* Button styling */
+    .next-button {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #004C97;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .next-button:hover {
+      background-color: #003366;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 1em;
+    }
+
+    /* Responsive design */
+    @media screen and (max-width: 768px) {
+      .team-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .team-member, .instructor {
+        width: 80%;
+        max-width: 350px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+
+      section h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Eubix!</h1>
+    <p>Empowering students with spoken English while preserving Kannada</p>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Eubix, our mission is to bridge the gap between language barriers and educational opportunities for government school students. We aim to empower students with spoken English skills while respecting and preserving their native Kannada language.</p>
+    <p>We believe that effective communication in English can open doors to a brighter future, enabling students to excel academically, professionally, and socially. By integrating Kannada as the foundation, we ensure a seamless and relatable learning experience, fostering confidence and growth.</p>
+    <p>Our project focuses on creating an inclusive and interactive environment where students can learn at their own pace and enjoy the journey of language learning. With innovative methods, relatable examples, and continuous support, we aspire to build a generation of confident, multilingual individuals ready to take on the world.</p>
+    <p>Join us in our mission to inspire, educate, and empower!</p>
+  </section>
+
+  <section id="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-container">
+      <div class="team-member">
+        <h3>Prathamesh Eedigi</h3>
+        <p>Team Member</p>
+      </div>
+      <div class="team-member">
+        <h3>Mudit Nayak</h3>
+        <p>Team Member</p>
+      </div>
+      <div class="team-member">
+        <h3>Sunayana Kamat</h3>
+        <p>Team Member</p>
+      </div>
+      <div class="team-member">
+        <h3>Akshata Maruti</h3>
+        <p>Team Member</p>
+      </div>
+      <div class="team-member">
+        <h3>Anusha</h3>
+        <p>Team Member</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="instructor">
+    <h2>Course Instructor</h2>
+    <div class="team-container">
+      <div class="instructor">
+        <h3>Abhishek Kamadollishettar</h3>
+        <p>Course Instructor</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next Button -->
+  <div style="text-align: center; margin: 30px 0;">
+    <a href="engish alignment p.html" class="next-button">Next</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Eubix. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log("Eubix About Us Page Loaded Successfully!");
+    });
+  </script>
+</body>
+</html>

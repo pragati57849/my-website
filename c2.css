@@ -1,0 +1,224 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #0062cc;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Google Search Bar */
+.google-search-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#google-search-bar {
+    padding: 15px;
+    width: 50%;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+#google-search-bar:focus {
+    outline: none;
+    border-color: #0062cc;
+    box-shadow: 0 0 5px rgba(0, 98, 204, 0.5);
+}
+
+#search-btn {
+    padding: 15px 25px;
+    font-size: 16px;
+    background-color: #0062cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+    background-color: #004d99;
+}
+
+/* Resources Section */
+.resources {
+    margin: 40px;
+}
+
+.resources h2 {
+    font-size: 32px;
+    color: #0062cc;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#resource-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Resource Cards */
+.resource-item {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 30px; /* Added margin to ensure space between cards */
+}
+
+.resource-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.resource-item img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.resource-item h3 {
+    color: #0062cc;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.resource-item p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.resource-item a {
+    text-decoration: none;
+    color: #0062cc;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.resource-item a:hover {
+    color: #004d99;
+}
+
+/* Scholarships Section */
+.scholarships {
+    margin: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.scholarships h2 {
+    font-size: 32px;
+    color: #0062cc;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Scholarship Cards - Display side by side */
+#scholarship-list {
+    display: inline;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Scholarship Cards */
+.scholarship-item {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px; /* Adjusted to match resource cards */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 30px; /* Added margin to ensure space between cards */
+}
+
+.scholarship-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.scholarship-item h3 {
+    color: #0062cc;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.scholarship-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.scholarship-item a {
+    font-size: 14px;
+    color: #0062cc;
+    text-decoration: none;
+}
+
+.scholarship-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0062cc;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #google-search-bar {
+        width: 80%;
+    }
+
+    #resource-list, #scholarship-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resource-item, .scholarship-item {
+        width: 90%;
+    }
+}

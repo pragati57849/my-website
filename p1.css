@@ -1,0 +1,159 @@
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif; /* More modern font */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4e73df, #afccc2); /* Smooth gradient background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* Container for login */
+.login-container {
+    background: rgba(255, 255, 255, 0.15); /* Lighter background with transparency */
+    backdrop-filter: blur(15px); /* Stronger blur effect */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header styles */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: 600; /* Bold but not overly heavy */
+    color: #fff;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); /* Subtle text shadow */
+}
+
+/* Subheader styles */
+h2 {
+    font-size: 1.3em;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+/* Paragraph text */
+p {
+    font-size: 1em;
+    margin-bottom: 25px;
+    color: #f1f1f1; /* Softer text color */
+}
+
+/* Form container style */
+.form-container {
+    width: 100%;
+}
+
+/* Form group for individual input fields */
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+/* Label styles */
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #ddd; /* Lighter color for labels */
+}
+
+/* Input field styles */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc; /* Light border */
+    border-radius: 8px;
+    font-size: 1.1em;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.form-group input:focus {
+    background: rgba(255, 255, 255, 0.2); /* Lighter focus background */
+    border-color: #302e5e; /* Green border on focus */
+}
+
+/* Button styling */
+button {
+    outline: none;
+}
+
+/* Primary button styling */
+button.btn-primary {
+    background-color: #1cc88a; /* Green color for primary button */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button.btn-primary:hover {
+    background-color: #17a673; /* Darker green on hover */
+    transform: translateY(-3px);
+}
+
+/* Toggle button styles */
+#form-toggle {
+    margin-bottom: 20px;
+}
+
+#form-toggle button {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    font-size: 1.1em;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 18px;
+    margin: 0 5px;
+    transition: all 0.3s;
+}
+
+#form-toggle button:hover {
+    background: #fff;
+    color: #231281;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    .login-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
